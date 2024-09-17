@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - My E-Commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar (optional) -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyStore</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sign-Up Form -->
+    <section class="sign-up-section">
+        <h2>Create an Account</h2>
+        <form action="register.php" method="POST" class="sign-up-form">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm_password">Confirm Password</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Log in</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My E-Commerce Site</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

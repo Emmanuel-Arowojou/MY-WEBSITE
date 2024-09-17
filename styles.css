@@ -1,0 +1,429 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+h1 {
+    color: blue;
+}
+
+p {
+    color: blue;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f4f4f4;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+}
+
+.search-bar input {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-bar button:hover {
+    background-color: #2980b9;
+}
+
+/* Hero Banner */
+.hero {
+    background-image: url('images/banner.jpg'); /* Add a banner image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.cta {
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.cta:hover {
+    background-color: #c0392b;
+}
+
+/* Featured Products */
+.featured-products {
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+}
+
+.featured-products h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product span {
+    font-size: 1.2rem;
+    color: #e74c3c;
+}
+
+.product:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.footer-links li {
+    margin: 0 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #f4f4f4;
+}
+/* Sign-Up Section */
+.sign-up-section {
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.sign-up-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up-form label {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.sign-up-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.sign-up-form button {
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.sign-up-form button:hover {
+    background-color: #2980b9;
+}
+
+.sign-up-section p {
+    margin-top: 10px;
+}
+
+.sign-up-section a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.sign-up-section a:hover {
+    text-decoration: underline;
+}
+/* Login Section */
+.login-section, .sign-up-section {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto; /* Adjust margin to fit */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    min-height: 400px; /* Increase height of the container */
+}
+
+.login-section h2, .sign-up-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+/* Form Styling */
+.login-form, .sign-up-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label, .sign-up-form label {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.login-form input, .sign-up-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Button Styling */
+.login-form button, .sign-up-form button {
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.login-form button:hover, .sign-up-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Links */
+.login-section p, .sign-up-section p {
+    margin-top: 10px;
+}
+
+.login-section a, .sign-up-section a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.login-section a:hover, .sign-up-section a:hover {
+    text-decoration: underline;
+}
+
+
+/* Login Section */
+.login-section, .sign-up-section {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto; /* Adjust margin to fit */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    min-height: 600px; /* Increase height of the container */
+}
+
+.login-section h2, .sign-up-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+/* Form Styling */
+.login-form, .sign-up-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label, .sign-up-form label {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.login-form input, .sign-up-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Button Styling */
+.login-form button, .sign-up-form button {
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.login-form button:hover, .sign-up-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Links */
+.login-section p, .sign-up-section p {
+    margin-top: 10px;
+}
+
+.login-section a, .sign-up-section a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.login-section a:hover, .sign-up-section a:hover {
+    text-decoration: underline;
+}
+
+/* Existing product grid styles */
+.product-grid, .wears-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.product, .wear-item {
+    flex: 1 1 calc(25% - 40px); /* Adjust size for 4 products in a row */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Ensure all product images have the same height */
+.product img, .wear-item img {
+    width: 100%;
+    height: 600px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensure the image scales without distortion */
+    border-radius: 10px;
+}
+
+.product p, .wear-item p {
+    font-size: 1rem;
+    margin: 10px 0 5px;
+}
+
+.product span, .wear-item span {
+    color: #3498db;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Additional styles for wears section */
+.wears-section {
+    margin-top: 50px;
+}
+
+.wears-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
